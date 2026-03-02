@@ -4,6 +4,14 @@
 @import "@fontsource/geist-sans/600.css";
 @import "@fontsource/geist-sans/700.css";
 
+@font-face {
+    font-family: "Geist Pixel";
+    src: url("/fonts/GeistPixel-Square.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
 @theme {
     --color-cream: #faf9f5;
     --color-cream-dark: #f0efeb;
@@ -14,6 +22,7 @@
     --color-accent: #0d877d;
     --color-accent-hover: #0a6e66;
     --font-sans: "Geist Sans", ui-sans-serif, system-ui, sans-serif;
+    --font-pixel: "Geist Pixel", monospace;
 }
 
 html {
