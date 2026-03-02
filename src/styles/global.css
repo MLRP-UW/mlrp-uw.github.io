@@ -1,0 +1,30 @@
+@import "tailwindcss";
+@import "@fontsource/geist-sans/400.css";
+@import "@fontsource/geist-sans/500.css";
+@import "@fontsource/geist-sans/600.css";
+@import "@fontsource/geist-sans/700.css";
+
+@theme {
+    --color-cream: #faf9f5;
+    --color-cream-dark: #f0efeb;
+    --color-text: #09090b;
+    --color-text-muted: #71717a;
+    --color-text-light: #a1a1aa;
+    --color-divider: #e4e4e7;
+    --color-accent: #0d875f;
+    --color-accent-hover: #0a6e4d;
+    --font-sans: "Geist Sans", ui-sans-serif, system-ui, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    font-family: var(--font-sans);
+    background-color: var(--color-cream);
+    color: var(--color-text);
+    line-height: 1.7;
+}

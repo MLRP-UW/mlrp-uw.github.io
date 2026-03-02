@@ -1,0 +1,28 @@
+---
+import site from "../data/site.json";
+
+const currentPath = Astro.url.pathname;
+---
+
+<nav class="w-full border-b border-divider bg-cream">
+  <div class="mx-auto flex max-w-3xl items-center justify-between px-6 py-4">
+    <a href="/" class="text-lg font-semibold tracking-tight text-text no-underline">
+      {site.shortName}
+    </a>
+    <div class="flex items-center gap-6">
+      {site.navigation.map((item) => (
+        <a
+          href={item.href}
+          class:list={[
+            "text-sm transition-colors no-underline",
+            currentPath === item.href || currentPath === item.href + "/"
+              ? "font-medium text-text"
+              : "text-text-muted hover:text-text",
+          ]}
+        >
+          {item.label}
+        </a>
+      ))}
+    </div>
+  </div>
+</nav>

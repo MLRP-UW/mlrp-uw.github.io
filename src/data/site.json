@@ -1,0 +1,32 @@
+{
+    "name": "Machine Learning Reading Program",
+    "shortName": "MLRP",
+    "university": "University of Washington",
+    "tagline": "Read, discuss, and explore machine learning research with the UW community.",
+    "description": "MLRP pairs undergraduates with graduate and postdoctoral researchers to read and discuss approximately eight machine learning-related research papers over the course of a quarter.",
+    "social": {
+        "linkedin": "https://www.linkedin.com/company/mlrp-uw",
+        "email": "mlrp@uw.edu"
+    },
+    "forms": {
+        "mentee": {
+            "title": "Mentee Application",
+            "description": "For undergraduate students looking to gain exposure to current ML research.",
+            "url": "https://docs.google.com/forms/d/e/1FAIpQLScJ1e9KbahXT0niY9HB8TZdLHkc4vM3RExrVrvsia_Rqg-Tow/viewform",
+            "embedUrl": "https://docs.google.com/forms/d/e/1FAIpQLScJ1e9KbahXT0niY9HB8TZdLHkc4vM3RExrVrvsia_Rqg-Tow/viewform?embedded=true"
+        },
+        "mentor": {
+            "title": "Mentor Application",
+            "description": "For graduate students and postdocs looking to gain mentorship experience.",
+            "url": "https://docs.google.com/forms/d/e/1FAIpQLScl6daNx5nO2pkbXu_3OSBYc6YBkGRNugUoi_3Lh5nzK1_q6A/viewform",
+            "embedUrl": "https://docs.google.com/forms/d/e/1FAIpQLScl6daNx5nO2pkbXu_3OSBYc6YBkGRNugUoi_3Lh5nzK1_q6A/viewform?embedded=true"
+        }
+    },
+    "navigation": [
+        { "label": "About", "href": "/about" },
+        { "label": "Join", "href": "/join" }
+    ],
+    "footer": {
+        "message": "Built with care by the MLRP team at the University of Washington."
+    }
+}
