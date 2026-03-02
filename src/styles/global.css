@@ -11,8 +11,8 @@
     --color-text-muted: #71717a;
     --color-text-light: #a1a1aa;
     --color-divider: #e4e4e7;
-    --color-accent: #0d875f;
-    --color-accent-hover: #0a6e4d;
+    --color-accent: #0d877d;
+    --color-accent-hover: #0a6e66;
     --font-sans: "Geist Sans", ui-sans-serif, system-ui, sans-serif;
 }
 
@@ -27,4 +27,9 @@ body {
     background-color: var(--color-cream);
     color: var(--color-text);
     line-height: 1.7;
+}
+
+::selection {
+    background-color: #0d877d;
+    color: #fff;
 }
