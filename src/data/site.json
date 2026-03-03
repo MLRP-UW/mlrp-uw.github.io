@@ -1,7 +1,7 @@
 {
     "name": "Machine Learning Reading Program",
     "shortName": "MLRP",
-    "university": "University of Washington",
+    "university": "University of Washington, Seattle",
     "tagline": "Read, discuss, and explore machine learning research with the UW community.",
     "description": "MLRP pairs undergraduates with graduate and postdoctoral researchers to read and discuss approximately eight machine learning-related research papers over the course of a quarter.",
     "social": {
@@ -27,6 +27,6 @@
         { "label": "Join", "href": "/join" }
     ],
     "footer": {
-        "message": "hey... 😉"
+        "message": "hey 😉"
     }
 }

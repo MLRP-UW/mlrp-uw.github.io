@@ -9,11 +9,17 @@ const currentPath = Astro.url.pathname;
         <a href="/" class="flex items-center gap-2 no-underline">
             <img src="/favicon.svg" alt={site.shortName} class="h-10 w-10" />
             <span
-                class="font-pixel text-2xl font-medium tracking-tight text-accent"
+                class="font-pixel text-2xl font-medium tracking-tight text-accent sm:hidden"
+                >MLRP @ UW</span
+            >
+            <span
+                class="hidden font-pixel text-2xl font-medium tracking-tight text-accent sm:inline"
                 >Machine Learning Reading Program</span
             >
         </a>
-        <div class="flex items-center gap-6">
+
+        <!-- Desktop nav links -->
+        <div class="hidden items-center gap-6 md:flex">
             {
                 site.navigation.map((item) => (
                     <a
@@ -31,5 +37,100 @@ const currentPath = Astro.url.pathname;
                 ))
             }
         </div>
+
+        <!-- Hamburger button (mobile) -->
+        <button
+            id="menu-toggle"
+            class="text-text md:hidden"
+            aria-label="Open menu"
+        >
+            <svg
+                class="h-6 w-6"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+            >
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+        </button>
     </div>
 </nav>
+
+<!-- Fullscreen mobile menu overlay -->
+<div id="mobile-menu" class="fixed inset-0 z-50 hidden bg-cream">
+    <div class="mx-auto flex max-w-3xl items-center justify-between px-6 py-4">
+        <a href="/" class="flex items-center gap-2 no-underline">
+            <img src="/favicon.svg" alt={site.shortName} class="h-10 w-10" />
+            <span
+                class="font-pixel text-2xl font-medium tracking-tight text-accent sm:hidden"
+                >MLRP @ UW</span
+            >
+            <span
+                class="hidden font-pixel text-2xl font-medium tracking-tight text-accent sm:inline"
+                >Machine Learning Reading Program</span
+            >
+        </a>
+        <button id="menu-close" class="text-text" aria-label="Close menu">
+            <svg
+                class="h-6 w-6"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+            >
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+        </button>
+    </div>
+    <div class="flex flex-col items-center justify-center gap-8 pt-24">
+        {
+            site.navigation.map((item) => (
+                <a
+                    href={item.href}
+                    class:list={[
+                        "text-2xl no-underline transition-colors",
+                        currentPath === item.href ||
+                        currentPath === item.href + "/"
+                            ? "font-medium text-text"
+                            : "text-text-muted hover:text-text",
+                    ]}
+                >
+                    {item.label}
+                </a>
+            ))
+        }
+    </div>
+</div>
+
+<script is:inline>
+    function initMobileMenu() {
+        var toggle = document.getElementById("menu-toggle");
+        var close = document.getElementById("menu-close");
+        var menu = document.getElementById("mobile-menu");
+        if (!toggle || !close || !menu) return;
+
+        toggle.addEventListener("click", function () {
+            menu.classList.remove("hidden");
+        });
+        close.addEventListener("click", function () {
+            menu.classList.add("hidden");
+        });
+        // Close menu when a link is clicked
+        menu.querySelectorAll("a").forEach(function (link) {
+            link.addEventListener("click", function () {
+                menu.classList.add("hidden");
+            });
+        });
+    }
+
+    initMobileMenu();
+    document.addEventListener("astro:page-load", initMobileMenu);
+</script>
