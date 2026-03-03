@@ -42,3 +42,8 @@ body {
     background-color: #0d877d;
     color: #fff;
 }
+
+::view-transition-old(root),
+::view-transition-new(root) {
+    animation-duration: 100ms;
+}

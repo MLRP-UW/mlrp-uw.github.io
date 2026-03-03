@@ -4,59 +4,62 @@ import site from "../data/site.json";
 ---
 
 <Layout>
-  <section class="mx-auto max-w-3xl px-6 pt-20 pb-16">
-    <p class="mb-3 text-sm font-medium tracking-wide text-text-muted uppercase">
-      {site.university}
-    </p>
-    <h1 class="mb-6 text-4xl font-bold tracking-tight sm:text-5xl">
-      {site.name}
-    </h1>
-    <p class="mb-10 max-w-xl text-lg text-text-muted">
-      {site.tagline}
-    </p>
-    <div class="flex flex-wrap gap-4">
-      <a
-        href="/join"
-        class="inline-block rounded-md bg-text px-5 py-2.5 text-sm font-medium text-cream no-underline transition-opacity hover:opacity-80"
-      >
-        Join the Program
-      </a>
-      <a
-        href="/about"
-        class="inline-block rounded-md border border-divider px-5 py-2.5 text-sm font-medium text-text no-underline transition-colors hover:bg-cream-dark"
-      >
-        Learn More
-      </a>
-    </div>
-  </section>
+    <section class="mx-auto max-w-3xl px-6 pt-20 pb-16">
+        <p
+            class="mb-3 text-sm font-medium tracking-wide text-text-muted uppercase"
+        >
+            {site.university}
+        </p>
+        <h1 class="mb-6 text-3xl font-bold tracking-tight sm:text-4xl">
+            {site.name}
+        </h1>
+        <p class="mb-10 max-w-xl text-lg text-text-muted">
+            {site.tagline}
+        </p>
+        <div class="flex flex-wrap gap-4">
+            <a
+                href="/join"
+                class="inline-block rounded-md bg-text px-5 py-2.5 text-sm font-medium text-cream no-underline transition-opacity hover:opacity-80"
+            >
+                Join the Program
+            </a>
+            <a
+                href="/about"
+                class="inline-block rounded-md border border-divider px-5 py-2.5 text-sm font-medium text-text no-underline transition-colors hover:bg-cream-dark"
+            >
+                Learn More
+            </a>
+        </div>
+    </section>
 
-  <hr class="mx-auto max-w-3xl border-divider" />
+    <hr class="mx-auto max-w-3xl border-divider" />
 
-  <section class="mx-auto max-w-3xl px-6 py-16">
-    <h2 class="mb-6 text-xl font-semibold">How It Works</h2>
-    <div class="space-y-6 text-text-muted">
-      <p>
-        MLRP pairs undergraduates with graduate and postdoctoral researchers to read
-        and discuss approximately eight machine learning-related research papers over
-        the course of a quarter.
-      </p>
-      <p>
-        Research papers are selected collaboratively by mentors and mentees. Pairs
-        meet weekly at a flexible, mutually agreed-upon time throughout the quarter.
-      </p>
-      <p>
-        At the end of the quarter, undergraduates give a short presentation on one or
-        more of their favorite papers.
-      </p>
-    </div>
-  </section>
+    <section class="mx-auto max-w-3xl px-6 py-16">
+        <h2 class="mb-6 text-xl font-semibold">How It Works</h2>
+        <div class="space-y-6 text-text-muted">
+            <p>
+                MLRP pairs undergraduates with graduate and postdoctoral
+                researchers to read and discuss approximately eight machine
+                learning-related research papers over the course of a quarter.
+            </p>
+            <p>
+                Research papers are selected collaboratively by mentors and
+                mentees. Pairs meet weekly at a flexible, mutually agreed-upon
+                time throughout the quarter.
+            </p>
+            <p>
+                At the end of the quarter, undergraduates give a short
+                presentation on one or more of their favorite papers.
+            </p>
+        </div>
+    </section>
 
-  <hr class="mx-auto max-w-3xl border-divider" />
+    <hr class="mx-auto max-w-3xl border-divider" />
 
-  <section class="mx-auto max-w-3xl px-6 py-16">
-    <p class="italic text-text-muted">
-      The program is designed to be a low-stress environment to build connections
-      within the machine learning community at UW.
-    </p>
-  </section>
+    <section class="mx-auto max-w-3xl px-6 py-16">
+        <p class="italic text-text-muted">
+            The program is designed to be a low-stress environment to build
+            connections within the machine learning community at UW.
+        </p>
+    </section>
 </Layout>
