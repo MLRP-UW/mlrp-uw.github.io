@@ -11,7 +11,7 @@
     "forms": {
         "mentee": {
             "title": "Mentee Application",
-            "description": "For undergraduate students looking to gain exposure to current ML research.",
+            "description": "For undergraduate students looking to gain exposure to ML research.",
             "url": "https://docs.google.com/forms/d/e/1FAIpQLScJ1e9KbahXT0niY9HB8TZdLHkc4vM3RExrVrvsia_Rqg-Tow/viewform",
             "embedUrl": "https://docs.google.com/forms/d/e/1FAIpQLScJ1e9KbahXT0niY9HB8TZdLHkc4vM3RExrVrvsia_Rqg-Tow/viewform?embedded=true"
         },
