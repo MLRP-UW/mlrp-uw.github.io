@@ -27,12 +27,13 @@
 
 html {
     scroll-behavior: smooth;
-    scrollbar-gutter: stable;
+    overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
 body {
+    width: 100vw;
     font-family: var(--font-sans);
     background-color: var(--color-cream);
     color: var(--color-text);
