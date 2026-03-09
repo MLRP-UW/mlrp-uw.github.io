@@ -4,8 +4,8 @@ import site from "../data/site.json";
 ---
 
 <Layout>
-    <section class="mx-auto max-w-3xl px-6 pt-20 pb-16">
-        <h1 class="mb-6 text-4xl font-bold tracking-tight">Join MLRP</h1>
+    <section class="mx-auto max-w-3xl px-6 pt-14 pb-10">
+        <h1 class="mb-4 text-4xl font-bold tracking-tight">Join MLRP</h1>
         <p class="text-lg text-text-muted">
             Applications are open for both mentees (undergraduates) and mentors
             (graduate students and postdocs). Choose the role that fits you
@@ -16,9 +16,9 @@ import site from "../data/site.json";
     <hr class="mx-auto max-w-3xl border-divider" />
 
     <!-- Mentee Application -->
-    <section class="mx-auto max-w-3xl px-6 py-16">
+    <section class="mx-auto max-w-3xl px-6 py-10">
         <h2 class="mb-2 text-xl font-semibold">{site.forms.mentee.title}</h2>
-        <p class="mb-6 text-text-muted">{site.forms.mentee.description}</p>
+        <p class="mb-4 text-text-muted">{site.forms.mentee.description}</p>
         <div class="mb-4 overflow-hidden rounded-lg border border-divider">
             <iframe
                 src={site.forms.mentee.embedUrl}
@@ -47,9 +47,9 @@ import site from "../data/site.json";
     <hr class="mx-auto max-w-3xl border-divider" />
 
     <!-- Mentor Application -->
-    <section class="mx-auto max-w-3xl px-6 py-16">
+    <section class="mx-auto max-w-3xl px-6 py-10">
         <h2 class="mb-2 text-xl font-semibold">{site.forms.mentor.title}</h2>
-        <p class="mb-6 text-text-muted">{site.forms.mentor.description}</p>
+        <p class="mb-4 text-text-muted">{site.forms.mentor.description}</p>
         <div class="mb-4 overflow-hidden rounded-lg border border-divider">
             <iframe
                 src={site.forms.mentor.embedUrl}

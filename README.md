@@ -21,7 +21,7 @@ Page-specific content is in the `.astro` files under `src/pages/`.
 
 The site automatically deploys to GitHub Pages when changes are pushed to `main` via the GitHub Actions workflow in `.github/workflows/deploy.yml`.
 
-## Tech Stack
+## Stack
 
 - [Astro](https://astro.build) — Static site generator
 - [Tailwind CSS](https://tailwindcss.com) — Utility-first CSS
