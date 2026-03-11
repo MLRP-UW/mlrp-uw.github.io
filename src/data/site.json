@@ -11,13 +11,13 @@
     "forms": {
         "mentee": {
             "title": "Mentee Application",
-            "description": "For undergraduate students looking to gain exposure to ML research.",
+            "description": "For undergraduates looking to gain exposure to research.",
             "url": "https://docs.google.com/forms/d/e/1FAIpQLScJ1e9KbahXT0niY9HB8TZdLHkc4vM3RExrVrvsia_Rqg-Tow/viewform",
             "embedUrl": "https://docs.google.com/forms/d/e/1FAIpQLScJ1e9KbahXT0niY9HB8TZdLHkc4vM3RExrVrvsia_Rqg-Tow/viewform?embedded=true"
         },
         "mentor": {
             "title": "Mentor Application",
-            "description": "For graduate students and postdocs looking to gain mentorship experience.",
+            "description": "For graduates and postdocs looking to gain mentorship experience.",
             "url": "https://docs.google.com/forms/d/e/1FAIpQLScl6daNx5nO2pkbXu_3OSBYc6YBkGRNugUoi_3Lh5nzK1_q6A/viewform",
             "embedUrl": "https://docs.google.com/forms/d/e/1FAIpQLScl6daNx5nO2pkbXu_3OSBYc6YBkGRNugUoi_3Lh5nzK1_q6A/viewform?embedded=true"
         }

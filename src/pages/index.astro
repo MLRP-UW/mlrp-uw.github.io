@@ -5,21 +5,15 @@ import site from "../data/site.json";
 
 <Layout>
     <section class="mx-auto max-w-3xl px-6 pt-14 pb-10">
-        <!-- <p
-            class="mb-3 text-sm font-medium tracking-wide text-text-muted uppercase"
+        <h1
+            class="mb-4 text-5xl font-bold tracking-tight leading-none md:text-7xl"
         >
-            {site.university}
-        </p> -->
-        <h1 class="mb-2 text-4xl font-bold tracking-tight">
             Machine Learning Reading Program
         </h1>
         <p
             class="mb-4 text-sm font-medium tracking-wide text-text-muted uppercase"
         >
             {site.university}
-        </p>
-        <p class="mb-6 max-w-xl text-lg text-text-muted">
-            {site.tagline}
         </p>
         <div class="flex flex-wrap gap-4">
             <a
@@ -37,15 +31,40 @@ import site from "../data/site.json";
         </div>
     </section>
 
-    <hr class="mx-auto max-w-3xl border-divider" />
+    <div class="mx-auto max-w-3xl px-6">
+        <div class="h-px bg-divider"></div>
+    </div>
 
     <section class="mx-auto max-w-3xl px-6 py-10">
-        <h2 class="mb-4 text-xl font-semibold">How It Works</h2>
+        <h2 class="mb-4 text-2xl font-semibold">What Is MLRP?</h2>
+        <div class="space-y-4 text-text-muted">
+            <!-- <p>
+                    The Machine Learning Reading Program (MLRP) is a student-run
+                    initiative at the University of Washington that connects
+                    undergraduates with graduate and postdoctoral researchers
+                    through guided reading and discussion of machine learning
+                    research papers.
+                </p> -->
+            <p>
+                The Machine Learning Reading Program (MLRP) is a student-run
+                initiative at the University of Washington that connects
+                undergraduates with graduate and postdoctoral mentors to read
+                and discuss machine learning research papers.
+            </p>
+        </div>
+    </section>
+
+    <div class="mx-auto max-w-3xl px-6">
+        <div class="h-px bg-divider"></div>
+    </div>
+
+    <section class="mx-auto max-w-3xl px-6 py-10">
+        <h2 class="mb-4 text-2xl font-semibold">How Does It Work?</h2>
         <div class="space-y-4 text-text-muted">
             <p>
-                MLRP pairs undergraduates with graduate and postdoctoral
-                researchers to read and discuss approximately eight machine
-                learning-related research papers over the course of a quarter.
+                Undergraduates are paired with a graduate or postdoctoral mentor
+                to read and discuss approximately eight machine learning-related
+                research papers over the course of a quarter.
             </p>
             <p>
                 Research papers are selected collaboratively by mentors and
@@ -59,12 +78,55 @@ import site from "../data/site.json";
         </div>
     </section>
 
-    <hr class="mx-auto max-w-3xl border-divider" />
+    <div class="mx-auto max-w-3xl px-6">
+        <div class="h-px bg-divider"></div>
+    </div>
 
     <section class="mx-auto max-w-3xl px-6 py-10">
-        <p class="italic text-text-muted">
-            The program is designed to be a low-stress environment to build
-            connections within the machine learning community at UW.
-        </p>
+        <h2 class="mb-4 text-2xl font-semibold">Who Should Apply?</h2>
+        <div class="space-y-4 text-text-muted">
+            <p>
+                The program is <strong>open to all undergraduates</strong>,
+                regardless of major. Students from any academic or personal
+                background are welcome, as long as they bring curiosity about
+                machine learning.
+            </p>
+            <p>
+                Even if you're not interested in pure machine learning, you are
+                still encouraged to apply. We aim to have mentors across a <strong
+                    >wide range of fields</strong
+                >, from robotics to natural language processing, AI for science,
+                and more.
+            </p>
+            <p>
+                While some familiarity with calculus, linear algebra, and
+                probability may be helpful, there are no formal prerequisites
+                for participating in the program.
+            </p>
+            <p>
+                The program may be especially useful for students who are
+                considering graduate school or a career in research.
+            </p>
+        </div>
     </section>
+
+    <!-- <div class="mx-auto max-w-3xl px-6">
+        <div class="h-px bg-divider"></div>
+    </div>
+
+    <section class="mx-auto max-w-3xl px-6 py-10">
+        <h2 class="mb-4 text-2xl font-semibold">Why MLRP?</h2>
+        <div class="space-y-4 text-text-muted">
+            <p>
+                Many undergrads interested in machine learning eventually ask
+                the question: how do I get started in research? The typical
+                advice they get is to take courses, but the knowledge gained
+                from courses is only part of what's required. The ability to
+                read, engage, and keep up with current research papers, an
+                essential skill for doing research, is often overlooked. MLRP
+                aims to bridge this gap by connecting undergrads with machine
+                learning researchers to build this skill.
+            </p>
+        </div>
+    </section> -->
 </Layout>

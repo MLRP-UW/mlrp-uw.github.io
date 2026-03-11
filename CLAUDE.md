@@ -52,6 +52,6 @@ Use these as Tailwind classes: `bg-cream`, `text-text-muted`, `border-divider`, 
 
 - Pages use the shared `Layout.astro` which includes Navbar and Footer
 - Content sections use `max-w-3xl mx-auto px-6` for consistent narrow centered layout
-- Sections are separated by `<hr class="mx-auto max-w-3xl border-divider" />`
+- Sections are separated by `<div class="mx-auto max-w-3xl px-6"><div class="h-px bg-divider"></div></div>`
 - Navigation links are driven by the `navigation` array in `site.json`
 - Pages on hold (Calendar, FAQ, Team) exist as stubs but are not in the nav

@@ -5,24 +5,23 @@ import site from "../data/site.json";
 
 <Layout>
     <section class="mx-auto max-w-3xl px-6 pt-14 pb-10">
-        <h1 class="mb-4 text-4xl font-bold tracking-tight">Join MLRP</h1>
-        <p class="text-lg text-text-muted">
-            Applications are open for both mentees (undergraduates) and mentors
-            (graduate students and postdocs). Choose the role that fits you
-            below.
-        </p>
+        <h1
+            class="mb-4 text-5xl font-bold tracking-tight leading-none md:text-7xl"
+        >
+            Join MLRP
+        </h1>
         <p class="mt-3 text-text-muted">
-            Spring application deadline: <strong
-                >March 30, 2026 at 11:59 PM</strong
-            >.
+            Application deadline: <strong>March 30, 2026 at 11:59 PM</strong>.
         </p>
     </section>
 
-    <hr class="mx-auto max-w-3xl border-divider" />
+    <div class="mx-auto max-w-3xl px-6">
+        <div class="h-px bg-divider"></div>
+    </div>
 
     <!-- Mentee Application -->
     <section class="mx-auto max-w-3xl px-6 py-10">
-        <h2 class="mb-2 text-xl font-semibold">{site.forms.mentee.title}</h2>
+        <h2 class="mb-2 text-2xl font-semibold">{site.forms.mentee.title}</h2>
         <p class="mb-4 text-text-muted">{site.forms.mentee.description}</p>
         <div class="mb-4 overflow-hidden rounded-lg border border-divider">
             <iframe
@@ -49,11 +48,13 @@ import site from "../data/site.json";
         </p>
     </section>
 
-    <hr class="mx-auto max-w-3xl border-divider" />
+    <div class="mx-auto max-w-3xl px-6">
+        <div class="h-px bg-divider"></div>
+    </div>
 
     <!-- Mentor Application -->
     <section class="mx-auto max-w-3xl px-6 py-10">
-        <h2 class="mb-2 text-xl font-semibold">{site.forms.mentor.title}</h2>
+        <h2 class="mb-2 text-2xl font-semibold">{site.forms.mentor.title}</h2>
         <p class="mb-4 text-text-muted">{site.forms.mentor.description}</p>
         <div class="mb-4 overflow-hidden rounded-lg border border-divider">
             <iframe

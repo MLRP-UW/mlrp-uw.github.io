@@ -16,7 +16,7 @@
     --color-cream: #faf9f5;
     --color-cream-dark: #f0efeb;
     --color-text: #09090b;
-    --color-text-muted: #71717a;
+    --color-text-muted: #374151;
     --color-text-light: #a1a1aa;
     --color-divider: #e4e4e7;
     --color-accent: #0d877d;
@@ -35,9 +35,10 @@ html {
 body {
     width: 100vw;
     font-family: var(--font-sans);
+    font-size: 1.125rem;
     background-color: var(--color-cream);
     color: var(--color-text);
-    line-height: 1.7;
+    line-height: 1.5;
 }
 
 ::selection {
