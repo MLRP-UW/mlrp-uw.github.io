@@ -43,7 +43,7 @@ body {
 
 ::selection {
     background-color: #0d877d;
-    color: #fff;
+    color: #ffffff;
 }
 
 ::view-transition-old(root),
