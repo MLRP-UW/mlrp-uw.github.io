@@ -11,7 +11,39 @@ import site from "../data/site.json";
             Join MLRP
         </h1>
         <p class="text-text-muted">
-            Application deadline: <strong>Friday, April 3rd at 11:59 PM</strong
+            Application deadline: <strong>Tuesday, April 7th at 5 PM</strong>.
+        </p>
+    </section>
+
+    <div class="mx-auto max-w-3xl px-6">
+        <div class="border-t border-divider"></div>
+    </div>
+
+    <!-- Mentor Application -->
+    <section class="mx-auto max-w-3xl px-6 py-10">
+        <h2 class="mb-2 text-2xl font-semibold">{site.forms.mentor.title}</h2>
+        <p class="mb-4 text-text-muted">{site.forms.mentor.description}</p>
+        <div class="mb-4 overflow-hidden rounded-lg border border-divider">
+            <iframe
+                src={site.forms.mentor.embedUrl}
+                width="100%"
+                height="800"
+                frameborder="0"
+                marginheight="0"
+                marginwidth="0"
+                title="Mentor Application Form"
+                class="bg-cream"
+            >
+                Loading form...
+            </iframe>
+        </div>
+        <p class="text-sm text-text-muted">
+            Having trouble? <a
+                href={site.forms.mentor.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-accent underline hover:text-accent-hover"
+                >Open the form directly</a
             >.
         </p>
     </section>
@@ -42,39 +74,6 @@ import site from "../data/site.json";
         <p class="text-sm text-text-muted">
             Having trouble? <a
                 href={site.forms.mentee.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                class="text-accent underline hover:text-accent-hover"
-                >Open the form directly</a
-            >.
-        </p>
-    </section>
-
-    <div class="mx-auto max-w-3xl px-6">
-        <div class="border-t border-divider"></div>
-    </div>
-
-    <!-- Mentor Application -->
-    <section class="mx-auto max-w-3xl px-6 py-10">
-        <h2 class="mb-2 text-2xl font-semibold">{site.forms.mentor.title}</h2>
-        <p class="mb-4 text-text-muted">{site.forms.mentor.description}</p>
-        <div class="mb-4 overflow-hidden rounded-lg border border-divider">
-            <iframe
-                src={site.forms.mentor.embedUrl}
-                width="100%"
-                height="800"
-                frameborder="0"
-                marginheight="0"
-                marginwidth="0"
-                title="Mentor Application Form"
-                class="bg-cream"
-            >
-                Loading form...
-            </iframe>
-        </div>
-        <p class="text-sm text-text-muted">
-            Having trouble? <a
-                href={site.forms.mentor.url}
                 target="_blank"
                 rel="noopener noreferrer"
                 class="text-accent underline hover:text-accent-hover"
